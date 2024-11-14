@@ -1,0 +1,67 @@
+{% extends "Final/layout.html" %}
+
+{% load static %}
+
+{% block head %}
+    <link href="{% static 'Final/home.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+    <header>
+        <h1>CNC Construction</h1>
+    </header>
+
+    <section class="video-section">
+        <video autoplay loop muted>
+            <source src="{% static 'Final/videos/pool.mp4' %}" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </section>
+
+    <section class="welcome-section">
+        <h2>Welcome to CNC Construction</h2>
+        <p>We are dedicated to delivering exceptional construction services that meet the highest standards of quality and professionalism. Explore our services and see how we can help you bring your vision to life!</p>
+    </section>
+
+    <main>
+        <section class="hero">
+            <h2>Your Trusted Construction Partner</h2>
+            <p>Delivering quality construction services with integrity and commitment.</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </section>
+        
+        <section>
+            <h2>About Us</h2>
+            <p>CNC Construction has been serving the community for over a decade. Our mission is to provide exceptional construction services while ensuring customer satisfaction. We specialize in both residential and commercial projects, focusing on quality craftsmanship and attention to detail.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <ul>
+                <li>Residential Construction</li>
+                <li>Commercial Projects</li>
+                <li>Renovations and Remodels</li>
+                <li>Project Management</li>
+            </ul>
+            <p>For more details on each service, visit our Services page.</p>
+        </section>
+
+        <section>
+            <h2>Pool Construction</h2>
+            <p>At CNC Construction, we offer professional pool construction services tailored to your needs. Whether you're looking for a refreshing inground pool or a stylish above-ground option, our experienced team will guide you through the design and construction process to create your perfect backyard oasis.</p>
+        </section>
+
+        <section>
+            <h2>General Construction</h2>
+            <p>Our general construction services encompass a wide range of projects, from commercial buildings to infrastructure development. We pride ourselves on our attention to detail and commitment to delivering quality results that meet the highest standards of safety and sustainability.</p>
+        </section>
+
+        <section>
+            <h2>Housing Construction</h2>
+            <p>We specialize in housing construction, including custom homes and remodeling projects. Our team works closely with clients to design and build spaces that reflect their vision, ensuring every detail meets their expectations. From kitchen remodels to complete home renovations, we bring your ideas to life.</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 CNC Construction. All rights reserved.</p>
+    </footer>
+{% endblock %}

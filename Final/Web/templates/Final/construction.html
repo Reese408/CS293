@@ -1,0 +1,54 @@
+{% extends "Final/layout.html" %}
+
+{% load static %}
+
+{% block title %}Construction{% endblock %}
+
+{% block head %}
+    {{ block.super }}
+    <link href="{% static 'Final/construction.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<body>
+    <header>
+        <h1>Construction</h1>
+    </header>
+
+    <section id="intro">
+        <h2>Our Construction Services</h2>
+        <p>At CNC Construction, we offer a wide range of construction services that cater to the needs of residential, commercial, and industrial clients. Whether you are looking to build a new home, renovate an office, or develop large-scale industrial projects, we are here to make your vision a reality.</p>
+    </section>
+
+    <section id="services-list">
+        <h3>Our Specialties</h3>
+        <ul>
+            <li>
+                <h4>Residential Construction</h4>
+                <p>We specialize in building custom homes, renovations, and remodeling. Whether you're building from the ground up or upgrading your current space, our team ensures top-quality craftsmanship.</p>
+            </li>
+            <li>
+                <h4>Commercial Construction</h4>
+                <p>Our commercial construction services are tailored to meet the unique demands of office buildings, retail stores, and other commercial properties. We focus on efficiency, sustainability, and timely delivery.</p>
+            </li>
+            <li>
+                <h4>Industrial Construction</h4>
+                <p>From warehouses to manufacturing plants, CNC Construction has the expertise to deliver large-scale industrial projects that meet industry standards and safety regulations.</p>
+            </li>
+            <li>
+                <h4>Renovations & Remodels</h4>
+                <p>Our renovation services include everything from kitchen remodels to complete office renovations. We help bring new life to your existing space while keeping within your budget.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="mission">
+        <h3>Our Mission</h3>
+        <p>At CNC Construction, our mission is simple: to provide high-quality, reliable construction services that exceed client expectations. We are committed to sustainable practices, innovative solutions, and customer satisfaction.</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 CNC Construction. All rights reserved.</p>
+    </footer>
+</body>
+{% endblock %}

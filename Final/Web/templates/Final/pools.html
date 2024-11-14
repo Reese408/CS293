@@ -1,0 +1,63 @@
+{% extends "Final/layout.html" %}
+
+{% load static %}
+
+{% block title %}Pools{% endblock %}
+
+{% block head %}
+    {{ block.super }}
+    <link href="{% static 'Final/pool.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<body>
+    <header>
+        <div class="header-left">
+            <div class="gradient-text">
+                <h2>CNC Pools</h2>
+            </div>
+        </div>
+        <div class="header-right">Designed for Perfection</div>
+    </header>
+
+    <div class="container">
+        <img src="{% static 'Final/images/Shasta_Pools_July_2019-116.jpg' %}" alt="Pool Image">
+    </div>
+    <div class="discription">
+            About Our Pools
+    </div>
+    <div class="third">
+        <p>At CNC Construction, we specialize in creating stunning in-ground pools that transform your outdoor space into a personal oasis. Our dedication to quality craftsmanship and customer satisfaction is at the heart of everything we do, ensuring that every project reflects your unique vision and style.</p>
+        <br>
+        <h1><u>Our Offerings:</u></h1>
+        <ul>
+            <li><b>Custom In-Ground Pools:</b> Each pool is meticulously designed to suit your preferences and enhance your home’s aesthetic. We take the time to understand your needs and create a tailored solution that fits perfectly within your outdoor environment.</li>
+            <br>
+            <li><b>Premium Materials:</b> We prioritize using the highest quality materials and advanced construction techniques. This commitment to excellence ensures that your pool not only looks beautiful but is also built to last for years to come.</li>
+            <br>
+            <li><b>Comprehensive Services:</b> From the initial consultation to the final installation, our experienced team guides you through every step of the process, ensuring that no detail is overlooked. We believe in taking our time to deliver a product that exceeds your expectations.</li>
+        </ul>
+    </div>
+
+    <div class="projects-header">
+        Projects
+    </div>
+
+    <div class="second">
+        <p>Explore our range of projects and see how we can help you create the perfect pool or renovation.</p>
+        <div class="projects">
+            <img src="{% static 'Final/images/pool_image.jpg' %}" alt="Pool Image">
+            <ul>
+                <li><b>location:</b><p> Ashland, Ohio</p></li>
+                <li><b>Proudct:</b><p> 20x40 inground pool</p></li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <h3>More Questions?</h3><p>Contact us at:</p>
+        <p>Email: <a href="mailto:ccox@gmail.com">ccox@gmail.com</a></p>
+        <p>Phone: <a href="tel:+14196062788">+1 (419) 606-2788</a></p>
+    </footer>
+</body>
+{% endblock %}
